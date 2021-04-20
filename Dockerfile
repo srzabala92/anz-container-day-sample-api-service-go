@@ -1,6 +1,6 @@
 # This is a multi-stage build. First we are going to compile and then
 # create a small image for runtime.
-FROM golang:1.11.1 as builder
+FROM public.ecr.aws/g8u9k6g7/immersion-day-containers:latest as builder
 
 RUN mkdir -p /go/src/github.com/eks-workshop-sample-api-service-go
 WORKDIR /go/src/github.com/eks-workshop-sample-api-service-go
