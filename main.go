@@ -14,7 +14,7 @@ func main() {
 
 		f := fib()
 
-		res := &response{Message: "Hola estamos probando CI/CD"}
+		res := &response{Message: "Esto es una prueba de CI/CD con EKS"}
 
 		for _, e := range os.Environ() {
 			pair := strings.Split(e, "=")
